@@ -38,6 +38,9 @@ export function Faq() {
             title="Questions, answered."
             description="Everything you need to know before starting your digital khata."
           />
+          <p className="mt-5 font-urdu text-lg text-accent">
+            آپ کے سوال، ہمارے جواب
+          </p>
         </div>
 
         <div className="divide-y divide-border overflow-hidden rounded-3xl border border-border bg-surface">

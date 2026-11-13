@@ -46,6 +46,9 @@ export function Footer() {
             <p className="mt-4 font-urdu text-right text-xl leading-loose text-accent">
               کھاتہ صاف، کاروبار مضبوط
             </p>
+            <p className="mt-1 text-right font-urdu text-sm text-muted">
+              روپے واپس، رشتے برقرار
+            </p>
             <div className="mt-5 flex flex-wrap gap-2.5">
               <a
                 href="#get-started"

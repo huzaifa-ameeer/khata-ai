@@ -69,6 +69,9 @@ export function Features() {
             }
             description="From the first loan to the final payment, Khata AI handles the remembering — so you can focus on the shop."
           />
+          <p className="mx-auto mt-4 max-w-2xl text-center font-urdu text-lg text-accent sm:text-xl">
+            ہر گاہک، ہر ادھار — ایک ہی کھاتے میں
+          </p>
         </div>
 
         <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -144,6 +147,9 @@ export function Features() {
                     ))}
                     <p className="pt-1 font-mono text-[10px] uppercase tracking-[0.18em] opacity-70">
                       repeats every 2 hours · stops when paid
+                    </p>
+                    <p className="text-right font-urdu text-sm opacity-80">
+                      ہر دو گھنٹے بعد یاد دہانی · ادائیگی پر بند
                     </p>
                   </div>
                 )}

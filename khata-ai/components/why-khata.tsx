@@ -30,6 +30,9 @@ export function WhyKhata() {
             }
             description="Chasing udhaar costs time and strains relationships. Khata AI makes the follow-up consistent, polite and automatic."
           />
+          <p className="mx-auto mt-4 max-w-2xl text-center font-urdu text-lg text-accent sm:text-xl">
+            محنت آپ کی، یاد دہانی ہماری
+          </p>
         </div>
 
         <div className="mt-12 grid gap-4 md:grid-cols-2">

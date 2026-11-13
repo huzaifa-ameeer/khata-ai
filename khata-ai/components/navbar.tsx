@@ -90,6 +90,9 @@ export function Navbar() {
             className="fixed inset-x-0 bottom-0 top-16 z-40 bg-black/20 backdrop-blur-md motion-reduce:animate-none animate-[menu-fade-in_180ms_ease-out] md:hidden"
           />
           <div className="absolute inset-x-0 top-full z-50 border-b border-border bg-surface/70 shadow-[0_24px_60px_-30px_rgba(0,0,0,0.45)] backdrop-blur-2xl motion-reduce:animate-none animate-[menu-slide-down_220ms_ease-out] md:hidden">
+            <p className="mx-auto max-w-6xl px-5 pt-4 text-right font-urdu text-sm text-muted sm:px-6">
+              دکان کا کھاتہ، اب خودکار
+            </p>
             <ul className="mx-auto flex max-w-6xl flex-col gap-1 px-5 py-4 sm:px-6">
               {links.map((link) => (
                 <li key={link.href}>

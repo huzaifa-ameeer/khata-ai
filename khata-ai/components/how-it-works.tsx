@@ -52,6 +52,9 @@ export function HowItWorks() {
               }
               description="Set up your first customer in minutes. Khata AI takes over the follow-ups from there."
             />
+            <p className="mt-5 font-urdu text-lg text-accent">
+              ادھار لکھیں، یاد دہانی خود چلے
+            </p>
             <a
               href="#get-started"
               className="mt-8 inline-flex h-11 items-center gap-2 rounded-full bg-accent px-5 text-sm font-semibold text-accent-ink transition-colors hover:bg-accent-hover"

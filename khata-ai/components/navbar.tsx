@@ -37,49 +37,51 @@ export function Navbar() {
   }, [open]);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border/80 bg-bg/80 backdrop-blur-xl">
-      <nav className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-5 sm:px-6">
-        <a href="#top" className="shrink-0" aria-label="Khata AI home">
-          <Logo />
-        </a>
-
-        <ul className="hidden items-center gap-1 md:flex">
-          {links.map((link) => (
-            <li key={link.href}>
-              <a
-                href={link.href}
-                className="rounded-full px-3.5 py-2 text-sm font-medium text-muted transition-colors hover:bg-surface-2 hover:text-ink"
-              >
-                {link.label}
-              </a>
-            </li>
-          ))}
-        </ul>
-
-        <div className="flex items-center gap-2.5">
-          <ThemeToggle />
-          <a
-            href="#get-started"
-            className="hidden h-9 items-center gap-1.5 rounded-full bg-accent px-4 text-sm font-semibold text-accent-ink transition-colors hover:bg-accent-hover sm:inline-flex"
-          >
-            Get started
-            <ArrowRightIcon className="size-4" />
+    <>
+      <header className="sticky top-0 z-50 border-b border-border/80 bg-bg/80 backdrop-blur-xl">
+        <nav className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-5 sm:px-6">
+          <a href="#top" className="shrink-0" aria-label="Khata AI home">
+            <Logo />
           </a>
-          <button
-            type="button"
-            onClick={() => setOpen((v) => !v)}
-            aria-label={open ? "Close menu" : "Open menu"}
-            aria-expanded={open}
-            className="inline-flex size-9 items-center justify-center rounded-full border border-border bg-surface text-ink md:hidden"
-          >
-            {open ? (
-              <CloseIcon className="size-5" />
-            ) : (
-              <MenuIcon className="size-5" />
-            )}
-          </button>
-        </div>
-      </nav>
+
+          <ul className="hidden items-center gap-1 md:flex">
+            {links.map((link) => (
+              <li key={link.href}>
+                <a
+                  href={link.href}
+                  className="rounded-full px-3.5 py-2 text-sm font-medium text-muted transition-colors hover:bg-surface-2 hover:text-ink"
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+
+          <div className="flex items-center gap-2.5">
+            <ThemeToggle />
+            <a
+              href="#get-started"
+              className="hidden h-9 items-center gap-1.5 rounded-full bg-accent px-4 text-sm font-semibold text-accent-ink transition-colors hover:bg-accent-hover sm:inline-flex"
+            >
+              Get started
+              <ArrowRightIcon className="size-4" />
+            </a>
+            <button
+              type="button"
+              onClick={() => setOpen((v) => !v)}
+              aria-label={open ? "Close menu" : "Open menu"}
+              aria-expanded={open}
+              className="inline-flex size-9 items-center justify-center rounded-full border border-border bg-surface text-ink md:hidden"
+            >
+              {open ? (
+                <CloseIcon className="size-5" />
+              ) : (
+                <MenuIcon className="size-5" />
+              )}
+            </button>
+          </div>
+        </nav>
+      </header>
 
       {open && (
         <>
@@ -87,9 +89,9 @@ export function Navbar() {
             type="button"
             aria-label="Close menu"
             onClick={() => setOpen(false)}
-            className="fixed inset-x-0 bottom-0 top-16 z-40 bg-black/20 backdrop-blur-md motion-reduce:animate-none animate-[menu-fade-in_180ms_ease-out] md:hidden"
+            className="fixed inset-0 z-40 bg-black/30 backdrop-blur-xl motion-reduce:animate-none animate-[menu-fade-in_180ms_ease-out] md:hidden"
           />
-          <div className="absolute inset-x-0 top-full z-50 border-b border-border bg-surface/70 shadow-[0_24px_60px_-30px_rgba(0,0,0,0.45)] backdrop-blur-2xl motion-reduce:animate-none animate-[menu-slide-down_220ms_ease-out] md:hidden">
+          <div className="fixed inset-x-0 top-16 z-50 border-b border-border bg-surface/80 shadow-[0_24px_60px_-30px_rgba(0,0,0,0.45)] backdrop-blur-2xl motion-reduce:animate-none animate-[menu-slide-down_220ms_ease-out] md:hidden">
             <p className="mx-auto max-w-6xl px-5 pt-4 text-right font-urdu text-sm text-muted sm:px-6">
               دکان کا کھاتہ، اب خودکار
             </p>
@@ -120,6 +122,6 @@ export function Navbar() {
           </div>
         </>
       )}
-    </header>
+    </>
   );
 }
